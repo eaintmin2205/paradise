@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Century', Centaur;
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: #081b29;
+    color: #ededed;
+}
+.class{
+    background-color: #081b29;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    z-index: 50;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    font-weight: 600;
+}
+
+/*.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-family: emily_oliva;
+    font-size: 1.1rem;
+}*/
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .5s;
+}
+.navbar a:hover,.navbar a.active{
+    color: #00abf0;
+}
+#home{
+    
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    background: url('background.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    max-width: 600px;
+}
+
+.main h5,h6{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #081b29;
+}
+
+.main p{
+    margin: 20px 0 40px;
+    font-size: 16px;
+}
+
+.main .btn{
+    display: flex;
+    width: 345px;
+    height: 45px;
+}
+
+.btn a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    border: 3px solid greenyellow;
+    color: #2C7865;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+
+.btn a:nth-child(1){
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn a:hover::before{
+    width: 100%;
+}
+
+/*.socials{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background: red;
+}*/
+
+.heading{
+    font-family: 'Vintage Mohai - Demo Version';
+    font-size: 5em;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+#myabout{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+#profile{
+    display: flex;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    color: black;
+    align-items: center;
+    padding: 20px;
+}
+.progal{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.progal img{
+     width: 300px;
+     height: 240px;
+     margin: 5px;
+}
+#service{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+.desgin{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top,rgb(255, 45, 45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.desgin:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255, 45, 45);
+}
+#contant h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+#contant form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contant form .input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer .socials{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .socials a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+    transition: .8s ease;
+}
+.footer .socials a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid orangered;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
